@@ -11,12 +11,16 @@ public class PlayerMovement : MonoBehaviour
     Vector3 m_Movement;
     Quaternion m_Rotation = Quaternion.identity;
 
+    // public GameObject exitObject;
+    // float m_exitDot;
+
     // Start is called before the first frame update
     void Start()
     {
         m_Animator = GetComponent<Animator>();
         m_Rigidbody = GetComponent<Rigidbody>();
         m_AudioSource = GetComponent<AudioSource>();
+
     }
 
     // Update is called once per frame
@@ -24,6 +28,9 @@ public class PlayerMovement : MonoBehaviour
     {
         float horizontal = Input.GetAxis("Horizontal");
         float vertical = Input.GetAxis("Vertical");
+        // Transform exitPosition = exitObject.GetComponent<Transform>();
+        // Vector3 playerPosition = m_Rigidbody.position;
+        // float m_exitDot = Vector3.Dot(playerPosition.Normalize(), exitPosition.position.Normalize());
 
         m_Movement.Set(horizontal, 0f, vertical);
         m_Movement.Normalize();

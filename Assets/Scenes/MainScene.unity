@@ -4906,6 +4906,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2626236144932888803, guid: e74859ff66fa84a4884a72c95fbe1599, type: 3}
+      propertyPath: exitObject
+      value: 
+      objectReference: {fileID: 1345861343}
     - target: {fileID: 8497107860899535016, guid: e74859ff66fa84a4884a72c95fbe1599, type: 3}
       propertyPath: m_Name
       value: JohnLemon
@@ -4971,6 +4975,14 @@ PrefabInstance:
       propertyPath: gameEnding
       value: 
       objectReference: {fileID: 1345861344}
+    - target: {fileID: 386569975241389306, guid: 26537a85d74558f479a3db5e56e237ad, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+    - target: {fileID: 386569975241389306, guid: 26537a85d74558f479a3db5e56e237ad, type: 3}
+      propertyPath: m_RenderMode
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 2921867753386856407, guid: 26537a85d74558f479a3db5e56e237ad, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -5018,6 +5030,18 @@ PrefabInstance:
     - target: {fileID: 2921867753387021303, guid: 26537a85d74558f479a3db5e56e237ad, type: 3}
       propertyPath: m_Name
       value: Ghost
+      objectReference: {fileID: 0}
+    - target: {fileID: 3508211123189543917, guid: 26537a85d74558f479a3db5e56e237ad, type: 3}
+      propertyPath: LightsModule.enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3508211123189543917, guid: 26537a85d74558f479a3db5e56e237ad, type: 3}
+      propertyPath: InitialModule.startSize.scalar
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3508211123189543917, guid: 26537a85d74558f479a3db5e56e237ad, type: 3}
+      propertyPath: InitialModule.startSpeed.scalar
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6508209745689978218, guid: 26537a85d74558f479a3db5e56e237ad, type: 3}
       propertyPath: waypoints.Array.size
