@@ -25,16 +25,17 @@ public class ExitWaypoint : MonoBehaviour
 
     private void Update()
     {
+        // resizing exit waypoint based on distance to exit
         distanceToExit = Vector3.Magnitude(target.position - gameObject.transform.position);
         t = distanceToExit / initialDistance;
         scaleFactor = Mathf.LerpUnclamped(minSize, maxSize, t);
 
         img.rectTransform.localScale = new Vector3(scaleFactor, scaleFactor, 1);
 
-        float minX = (img.GetPixelAdjustedRect().width / 2) * 0.3f;
+        float minX = (img.GetPixelAdjustedRect().width / 2) * scaleFactor;
         float maxX = Screen.width - minX;
 
-        float minY = (img.GetPixelAdjustedRect().height / 2) * 0.3f;
+        float minY = (img.GetPixelAdjustedRect().height / 2) * scaleFactor;
         float maxY = Screen.height - minY;
 
         Vector2 pos = Camera.main.WorldToScreenPoint(target.position);
